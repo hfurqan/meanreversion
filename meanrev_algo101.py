@@ -10,23 +10,9 @@ import talib
 
 
 
-symbols =['PAEL','TPL','SING','DCL','POWER','FCCL','DGKC','LUCK',
-          'THCCL','PIOC','GWLC','CHCC','MLCF','FLYNG','EPCL',
-          'LOTCHEM','SPL','DOL','NRSL','AGL','GGL','ICL','AKZO','ICI',
-           'WAHN','BAPL','FFC','EFERT','FFBL','ENGRO','AHCL','FATIMA',
-          'EFOODS','QUICE','ASC','TREET','ZIL','FFL','CLOV',
-          'BGL','STCL','GGGL','TGL','GHGL','OGDC','POL','PPL','MARI',
-          'SSGC','SNGP','HTL','PSO','SHEL','APL','HASCOL','RPL','MERIT',
-          'GLAXO','SEARL','FEROZ','HINOON','ABOT','KEL','JPGL','EPQL',
-          'HUBC','PKGP','NCPL','LPL','KAPCO','TSPL','ATRL','BYCO','NRL','PRL',
-          'DWSM','SML','MZSM','IMSL','SKRS','HWQS','DSFL','TRG','PTC','TELE',
-          'WTL','MDTL','AVN','NETSOL','SYS','HUMNL','PAKD',
-          'ANL','CRTM','NML','NCL','GATM','CLCPS','GFIL','CHBL',
-          'DFSM','KOSM','AMTEX','HIRAT','NCML','CTM','HMIM',
-           'CWSM','RAVT','PIBTL','PICT','PNSC','ASL',
-          'DSL','ISL','CSAP','MUGHAL','DKL','ASTL','INIL','GAIL','MEBL']
-start_date = '2016-01-01'
-end_date = '2017-05-31'
+symbols =['']
+start_date = ''
+end_date = ''
 long_period = 60
 short_period = 5
 back_test_dates = []
