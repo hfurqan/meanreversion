@@ -1,4 +1,5 @@
 # meanreversion
+# takes into account closing price of stock
 # short term period = 5 days
 # long term period = 120 days
 # checks for current price gretaer than long term average
