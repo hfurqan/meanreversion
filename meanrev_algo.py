@@ -9,21 +9,7 @@ import talib
 t0 = t.time()
 
 
-symbols =['PAEL','TPL','SING','DCL','POWER','FCCL','DGKC','LUCK',
-          'THCCL','PIOC','GWLC','CHCC','MLCF','FLYNG','EPCL',
-          'LOTCHEM','SPL','DOL','NRSL','AGL','GGL','ICL','AKZO','ICI',
-           'WAHN','BAPL','FFC','EFERT','FFBL','ENGRO','AHCL','FATIMA',
-          'EFOODS','QUICE','ASC','TREET','ZIL','FFL','CLOV',
-          'BGL','STCL','GGGL','TGL','GHGL','OGDC','POL','PPL','MARI',
-          'SSGC','SNGP','HTL','PSO','SHEL','APL','HASCOL','RPL','MERIT',
-          'GLAXO','SEARL','FEROZ','HINOON','ABOT','KEL','JPGL','EPQL',
-          'HUBC','PKGP','NCPL','LPL','KAPCO','TSPL','ATRL','BYCO','NRL','PRL',
-          'DWSM','SML','MZSM','IMSL','SKRS','HWQS','DSFL','TRG','PTC','TELE',
-          'WTL','MDTL','AVN','NETSOL','SYS','HUMNL','PAKD',
-          'ANL','CRTM','NML','NCL','GATM','CLCPS','GFIL','CHBL',
-          'DFSM','KOSM','AMTEX','HIRAT','NCML','CTM','HMIM',
-           'CWSM','RAVT','PIBTL','PICT','PNSC','ASL',
-          'DSL','ISL','CSAP','MUGHAL','DKL','ASTL','INIL','GAIL','MEBL']
+symbols =['']
 
 
 long_period = 120
@@ -42,7 +28,7 @@ def delta_time(converter,n_days):
 def data(symbol):
     dates=pd.date_range(start_date,end_date) 
     df=pd.DataFrame(index=dates)
-    df_temp=pd.read_csv('/home/furqan/Desktop/python_data/{}.csv'.format(str(symbol)),usecols=['Date','Close','Low','Open','High','Volume'],
+    df_temp=pd.read_csv('/enter_path_to_data/{}.csv'.format(str(symbol)),usecols=['Date','Close','Low','Open','High','Volume'],
                             parse_dates=True,index_col='Date',na_values=['nan'])
     df=df.join(df_temp)
     df=df.fillna(method='ffill')
@@ -61,8 +47,8 @@ def sma_close(closeprice,time_period):
     current_smaclose = smaclose[-1]
     return current_smaclose
     
-start_date = '2016-01-01'
-end_date = '2017-08-14'
+start_date = ''
+end_date = ''
 start_date = converter(start_date)
 end_date = converter(end_date)
 
